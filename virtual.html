@@ -17,6 +17,9 @@
 	<body>
 		<a-scene raycaster-autorefresh>
 
+		<a-assets><a-asset-item id="wall" src="resources/wall.gltf"></a-asset-item>
+		 </a-assets> 
+
 			<a-light type="directional" color="#fff" intensity="0.8" position="2 5 0" rotation="0 0 0"></a-light>
 			<a-sky color="rgb(100,100,225)"></a-SKY>
 
@@ -32,11 +35,11 @@
 		<acamera position="0 1.5 0"
 
 		<a-cylinder position="1.75 2.75 -3" radius="0.5" height="1.5" color="#424851" shadow.</a-cylinder>
-		<a-box position="4 5.5 -6" rotation="0 -90 0" depth=".05" width="16" height="8" color="black" shadow></a-box>
-
-		<a-box position="4 5.5 -6" rotation="0 -90 0" depth=".05" width="16" height="8" color="black" shadow></a-box>
+		<a-box position="4 5.5 -6" rotation="0 -90 0" depth=".05" width="16" height="8" color="coral" shadow></a-box>
 
 		<a-box position="-4 5.5 -6" rotation="0 -90 0" depth=".05" width="16" height="8" color="coral" shadow></a-box> 
+
+		<a-gtlf-model scale="1.7 1.7 1.7" position="0.2 1.5 -5.6" rotation="0 0 0" src="#wall" shadow></agtlf-model>
 
 	</a-scene>
 	</body>
